@@ -8,10 +8,35 @@ body {
     flex-direction: row;
 }
 
+p {
+    margin: 0;
+}
+
 #banner {
+    max-height: 100vh;
     width: 30%;
 
     background-image: url('creatives/chanclas.jpg');
     background-size: cover;
     background-position: center;
+
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+#disclaimer {
+    border: 1px solid red;
+}
+
+#form {
+    border: 1px solid red;
+}
+
+#submission {
+    border: 1px solid red;
 }
