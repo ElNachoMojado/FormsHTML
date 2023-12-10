@@ -1,20 +1,91 @@
 * {
     margin: 0;
-    min-height: 100vh;
+    max-height: 100vh;
 }
 
 body {
     display: flex;
     flex-direction: row;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5f7ff;
+
+    min-height: 100vh;
 }
 
 p {
     margin: 0;
 }
 
-#banner {
-    max-height: 100vh;
+h1,
+h2 {
+    margin-bottom: 2%;
+}
+
+fieldset {
+    margin-top: 2%;
+    border-radius: 5px;
+    max-width: 45%;
+    padding: 2% 0 3% 3%;
+}
+
+label {
+    font-size: 12px;
+}
+
+input {
+    max-width: 100%;
+}
+
+img {
+    position: inherit;
+    width: 100px;
+    left: 37.5%;
+}
+
+button {
+    font-weight: 900;
+    font-size: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 0 10px 0;
+    box-shadow: 0 0 3px black;
     width: 30%;
+    margin-bottom: 1%;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#logo {
+    background-color: rgb(157,181,200,0.5);
+    position: relative;
+    top: 30%;
+    width: 100%;
+}
+
+#personal div,
+#contact div,
+#password div {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 5%;
+    font-weight: 600;
+}
+
+#personal,
+#contact,
+#password {
+    display: flex;
+    flex-direction: row;
+}
+
+#banner {
+    width: 40%;
 
     background-image: url('creatives/chanclas.jpg');
     background-size: cover;
@@ -23,20 +94,23 @@ p {
 }
 
 #info {
-    display: flex;
-    flex-direction: column;
-
     width: 100%;
 }
 
 #disclaimer {
-    border: 1px solid red;
+    box-shadow: inset 0 -1px 1px rgb(0,0,0,0.3);
+
+    padding: 1% 0 1% 5%;
+    
 }
 
-#form {
-    border: 1px solid red;
+#forms {
+    padding: 1% 0 1% 5%;
+    box-shadow: 0 5px 5px rgb(0,0,0,0.3);
+    background-color: #ffffff;
+    color: #333333;
 }
 
 #submission {
-    border: 1px solid red;
+    padding: 2% 0 0 5%;
 }
