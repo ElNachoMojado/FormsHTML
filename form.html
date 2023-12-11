@@ -16,19 +16,16 @@
 
     <div id="info">
         <div id="disclaimer">
-            <h2>DISCLAIMER!</h2>
             <p>
-                Just to let you know, this form has no real functionality
-                so, whatever you do, don't expect anything back from it.
+                Nacho El Perro Mojado invites you to live your wildest dreams.
+                All you have to do is fill out the form below and submit your
+                information even though it has no actual functionality.
             </p>
-            <p>Sign up now to nothing!</p>
+            <p>Sign up now to become the best you!</p>
         </div>
         <div id="forms">
-            <form>
-                <h1>Sign-up Form</h1>
+            <form action="form.html" method="post">
                 <h2>Let's do this!</h2>
-                <fieldset>
-                    <legend>Your Name</legend>
 
                     <div id="personal">
                         <div>
@@ -40,10 +37,9 @@
                             <input type="text" id="last_name" name="last_name">
                         </div>
                     </div>
-                </fieldset>
+               
 
-                <fieldset>
-                    <legend>Contact information</legend>
+                
 
                     <div id="contact">
                         <div>
@@ -55,26 +51,26 @@
                             <input type="number" id="phone_numer" name="phone_numer">
                         </div>
                     </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Set up a Password</legend>
+               
+                    
 
                     <div id="password">
                         <div>
                             <label for="pwd">PASSWORD</label>
-                            <input type="password" id="pwd" name="pwd">
+                            <input type="password" id="pwd" name="pwd" required>
+                            <span class="error-msg">Please note password must be at least 3 characters long.</span>
                         </div>
                         <div>
                             <label for="confirm_pwd">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm_pwd" name="confirm_pwd">
+                            <input type="password" id="confirm_pwd" name="confirm_pwd" required>
+                            <span class="error-msg">Please note password must be at least 3 characters long.</span>
                         </div>
                     </div>
-                </fieldset>
+                
             </form>
         </div>
         <div id="submission">
-            <button type="button">Create Account</button>
+            <button type="submit">Create Account</button>
             <div>
                 Already have an account?
                 <a href="">Log in</a>
