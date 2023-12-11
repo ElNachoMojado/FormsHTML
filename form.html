@@ -47,8 +47,8 @@
                             <input type="email" id="email" name="email">
                         </div>
                         <div>
-                            <label for="phone_numer">PHONE NUMBER</label>
-                            <input type="number" id="phone_numer" name="phone_numer">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="number" id="phone_number" name="phone_number" max="10000000000">
                         </div>
                     </div>
                
@@ -66,15 +66,16 @@
                             <span class="error-msg">Please note password must be at least 3 characters long.</span>
                         </div>
                     </div>
+
+                    <div id="submission">
+                        <button type="submit">Create Account</button>
+                        <div>
+                            Already have an account?
+                            <a href="">Log in</a>
+                        </div>
+                    </div>
                 
             </form>
-        </div>
-        <div id="submission">
-            <button type="submit">Create Account</button>
-            <div>
-                Already have an account?
-                <a href="">Log in</a>
-            </div>
         </div>
     </div>
 </body>
